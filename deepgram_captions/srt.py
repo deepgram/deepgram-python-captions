@@ -1,12 +1,23 @@
-from .converters import DeepgramConverter
+from .helpers import seconds_to_timestamp
 
-
-def srt(transcription_data):
-  # check if transcription_data is in deepgram format. If it is, use deepgram_converter to format data
-  converter = DeepgramConverter(transcription_data)
+def srt(converter):
+  output = []
   lines = converter.get_lines()
-  print(lines)
-  
-  # if it isn't, use the converter passed in by the user
+  entry = 1
 
-  # create srt captions
+  for words in lines:
+      output.append(str(entry))
+      entry += 1
+
+      first_word = words[0]
+      last_word = words[-1]
+
+      start_time = seconds_to_timestamp(first_word['start'], "%H:%M:%S,%f")
+      end_time = seconds_to_timestamp(last_word['end'], "%H:%M:%S,%f")
+
+      output.append(f"{start_time} --> {end_time}")
+      punctuated_words = [word.get('punctuated_word', word['word']) for word in words]
+      output.append(" ".join(punctuated_words))
+      output.append("")
+
+  return "\n".join(output)

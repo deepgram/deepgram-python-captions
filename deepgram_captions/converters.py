@@ -1,7 +1,7 @@
 from .helpers import chunk_array
 
 class DeepgramConverter:
-  def __init__(self, dg_response) -> None:
+  def __init__(self, dg_response):
     # get the deepgram response.
     self.response = dg_response
 
@@ -26,3 +26,33 @@ class DeepgramConverter:
   def get_headers():
     output = []
     # create headers for deepgram captions
+
+
+class AssemblyAIConverter:
+  def __init__(self, assembly_response):
+    self.response = assembly_response
+
+  def word_map(self, word):
+    return {
+        'word': word['text'],
+        'start': word['start'],
+        'end': word['end'],
+        'confidence': word['confidence'],
+        'punctuated_word': word['text'],
+        'speaker': word['speaker']
+    }
+
+
+  def get_lines(self, line_length: int = 8):
+    results = self.response
+    content = []
+    if results.get('utterances'):
+        for utterance in results['utterances']:
+            if len(utterance['words']) > line_length:
+                content.extend(chunk_array([self.word_map(w) for w in utterance['words']], line_length))
+            else:
+                content.append([self.word_map(w) for w in utterance['words']])
+    else:
+        content.extend(chunk_array([self.word_map(w) for w in results['words']], line_length))
+
+    return content

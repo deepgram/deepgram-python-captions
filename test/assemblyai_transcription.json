@@ -1,0 +1,485 @@
+{
+  "id": "6a9zvzyx8u-f8fd-4bf4-9614-9497d76c6891",
+  "language_model": "assemblyai_default",
+  "acoustic_model": "assemblyai_default",
+  "language_code": "en",
+  "status": "completed",
+  "audio_url": "https://storage.googleapis.com/aai-playground-files-production/a72ebcc7-e6c3-4337-92cc-bc8ca86daa14?Expires=1720606027&GoogleAccessId=aai-playground%40assemblyai-web-production.iam.gserviceaccount.com&Signature=u2A4Zw1kohm7FOiw%2FT48XcPwsB3Fg5n%2Fs%2FQA9R8UOOSCN%2F12h%2FE4KNuEpkj713rpbltqNQ4AZhdkZXqS1zsEqOvj%2BH%2BN1a7GKuHgTJh%2BQKoGlNybTm%2F7bizW9ZcnFWNagpTa9KKgup1Z6WBOZxtvEujF4ERK7wYLM1pGwpEmHCPJuay1B0xoKFkYw2UH%2FLk02ieDymPNZs%2BsZ4YQqdeZwhWvMYHMS%2BG6Lc7DZ4Gu1XOJVRtO9KLK9jBW9Ne3k%2F0gNqRbj8kXd38Q4CuLUXs6MdNr4wtb1uhz8PUlcvEZfWcJwBZOPvP1rvGQVDexV2V4j7wNoDpyF9FdMeiaVs%2Fneg%3D%3D",
+  "text": "Yeah. As much as it's worth celebrating the first spacewalk with an all female team, I think many of us are looking forward to it just being normal. And I think if it signifies anything, it is to honor the women who came before us, who were skilled and qualified and didn't get the same opportunities that we have today.",
+  "words": [
+    {
+      "text": "Yeah.",
+      "start": 170,
+      "end": 718,
+      "confidence": 0.9941,
+      "speaker": "A"
+    },
+    {
+      "text": "As",
+      "start": 884,
+      "end": 1166,
+      "confidence": 0.99992,
+      "speaker": "A"
+    },
+    {
+      "text": "much",
+      "start": 1188,
+      "end": 1326,
+      "confidence": 0.99996,
+      "speaker": "A"
+    },
+    {
+      "text": "as",
+      "start": 1348,
+      "end": 1822,
+      "confidence": 0.96266,
+      "speaker": "A"
+    },
+    {
+      "text": "it's",
+      "start": 1956,
+      "end": 2346,
+      "confidence": 0.99978,
+      "speaker": "A"
+    },
+    {
+      "text": "worth",
+      "start": 2378,
+      "end": 2766,
+      "confidence": 0.99999,
+      "speaker": "A"
+    },
+    {
+      "text": "celebrating",
+      "start": 2868,
+      "end": 3870,
+      "confidence": 0.99245,
+      "speaker": "A"
+    },
+    {
+      "text": "the",
+      "start": 4290,
+      "end": 4654,
+      "confidence": 0.55,
+      "speaker": "A"
+    },
+    {
+      "text": "first",
+      "start": 4692,
+      "end": 5134,
+      "confidence": 1,
+      "speaker": "A"
+    },
+    {
+      "text": "spacewalk",
+      "start": 5252,
+      "end": 6234,
+      "confidence": 0.9899,
+      "speaker": "A"
+    },
+    {
+      "text": "with",
+      "start": 6362,
+      "end": 6606,
+      "confidence": 0.99998,
+      "speaker": "A"
+    },
+    {
+      "text": "an",
+      "start": 6628,
+      "end": 6766,
+      "confidence": 0.99914,
+      "speaker": "A"
+    },
+    {
+      "text": "all",
+      "start": 6788,
+      "end": 6974,
+      "confidence": 0.99989,
+      "speaker": "A"
+    },
+    {
+      "text": "female",
+      "start": 7012,
+      "end": 7354,
+      "confidence": 0.99989,
+      "speaker": "A"
+    },
+    {
+      "text": "team,",
+      "start": 7402,
+      "end": 8000,
+      "confidence": 1,
+      "speaker": "A"
+    },
+    {
+      "text": "I",
+      "start": 8370,
+      "end": 8686,
+      "confidence": 1,
+      "speaker": "A"
+    },
+    {
+      "text": "think",
+      "start": 8708,
+      "end": 8894,
+      "confidence": 1,
+      "speaker": "A"
+    },
+    {
+      "text": "many",
+      "start": 8932,
+      "end": 9134,
+      "confidence": 0.99999,
+      "speaker": "A"
+    },
+    {
+      "text": "of",
+      "start": 9172,
+      "end": 9326,
+      "confidence": 1,
+      "speaker": "A"
+    },
+    {
+      "text": "us",
+      "start": 9348,
+      "end": 9774,
+      "confidence": 1,
+      "speaker": "A"
+    },
+    {
+      "text": "are",
+      "start": 9892,
+      "end": 10222,
+      "confidence": 0.57763,
+      "speaker": "A"
+    },
+    {
+      "text": "looking",
+      "start": 10276,
+      "end": 10494,
+      "confidence": 1,
+      "speaker": "A"
+    },
+    {
+      "text": "forward",
+      "start": 10532,
+      "end": 10734,
+      "confidence": 0.99999,
+      "speaker": "A"
+    },
+    {
+      "text": "to",
+      "start": 10772,
+      "end": 10974,
+      "confidence": 0.96,
+      "speaker": "A"
+    },
+    {
+      "text": "it",
+      "start": 11012,
+      "end": 11166,
+      "confidence": 0.99995,
+      "speaker": "A"
+    },
+    {
+      "text": "just",
+      "start": 11188,
+      "end": 11374,
+      "confidence": 0.99996,
+      "speaker": "A"
+    },
+    {
+      "text": "being",
+      "start": 11412,
+      "end": 11806,
+      "confidence": 0.99998,
+      "speaker": "A"
+    },
+    {
+      "text": "normal.",
+      "start": 11908,
+      "end": 12666,
+      "confidence": 0.99999,
+      "speaker": "A"
+    },
+    {
+      "text": "And",
+      "start": 12778,
+      "end": 13534,
+      "confidence": 1,
+      "speaker": "A"
+    },
+    {
+      "text": "I",
+      "start": 13732,
+      "end": 14046,
+      "confidence": 0.65,
+      "speaker": "A"
+    },
+    {
+      "text": "think",
+      "start": 14068,
+      "end": 14254,
+      "confidence": 0.99988,
+      "speaker": "A"
+    },
+    {
+      "text": "if",
+      "start": 14292,
+      "end": 14446,
+      "confidence": 0.99998,
+      "speaker": "A"
+    },
+    {
+      "text": "it",
+      "start": 14468,
+      "end": 14606,
+      "confidence": 0.99999,
+      "speaker": "A"
+    },
+    {
+      "text": "signifies",
+      "start": 14628,
+      "end": 15114,
+      "confidence": 0.99175,
+      "speaker": "A"
+    },
+    {
+      "text": "anything,",
+      "start": 15162,
+      "end": 15614,
+      "confidence": 0.99997,
+      "speaker": "A"
+    },
+    {
+      "text": "it",
+      "start": 15732,
+      "end": 16014,
+      "confidence": 0.5311,
+      "speaker": "A"
+    },
+    {
+      "text": "is",
+      "start": 16052,
+      "end": 16590,
+      "confidence": 0.97364,
+      "speaker": "A"
+    },
+    {
+      "text": "to",
+      "start": 16740,
+      "end": 17054,
+      "confidence": 0.76,
+      "speaker": "A"
+    },
+    {
+      "text": "honor",
+      "start": 17092,
+      "end": 17530,
+      "confidence": 0.99997,
+      "speaker": "A"
+    },
+    {
+      "text": "the",
+      "start": 17610,
+      "end": 17806,
+      "confidence": 1,
+      "speaker": "A"
+    },
+    {
+      "text": "women",
+      "start": 17828,
+      "end": 18014,
+      "confidence": 0.99908,
+      "speaker": "A"
+    },
+    {
+      "text": "who",
+      "start": 18052,
+      "end": 18206,
+      "confidence": 0.99999,
+      "speaker": "A"
+    },
+    {
+      "text": "came",
+      "start": 18228,
+      "end": 18414,
+      "confidence": 1,
+      "speaker": "A"
+    },
+    {
+      "text": "before",
+      "start": 18452,
+      "end": 18702,
+      "confidence": 0.99999,
+      "speaker": "A"
+    },
+    {
+      "text": "us,",
+      "start": 18756,
+      "end": 19310,
+      "confidence": 0.65,
+      "speaker": "A"
+    },
+    {
+      "text": "who",
+      "start": 19460,
+      "end": 20014,
+      "confidence": 0.99997,
+      "speaker": "A"
+    },
+    {
+      "text": "were",
+      "start": 20132,
+      "end": 20414,
+      "confidence": 0.99969,
+      "speaker": "A"
+    },
+    {
+      "text": "skilled",
+      "start": 20452,
+      "end": 20906,
+      "confidence": 0.60398,
+      "speaker": "A"
+    },
+    {
+      "text": "and",
+      "start": 20938,
+      "end": 21134,
+      "confidence": 1,
+      "speaker": "A"
+    },
+    {
+      "text": "qualified",
+      "start": 21172,
+      "end": 22026,
+      "confidence": 0.99998,
+      "speaker": "A"
+    },
+    {
+      "text": "and",
+      "start": 22218,
+      "end": 22622,
+      "confidence": 0.95,
+      "speaker": "A"
+    },
+    {
+      "text": "didn't",
+      "start": 22676,
+      "end": 22906,
+      "confidence": 0.9999,
+      "speaker": "A"
+    },
+    {
+      "text": "get",
+      "start": 22938,
+      "end": 23278,
+      "confidence": 0.99997,
+      "speaker": "A"
+    },
+    {
+      "text": "the",
+      "start": 23364,
+      "end": 23614,
+      "confidence": 1,
+      "speaker": "A"
+    },
+    {
+      "text": "same",
+      "start": 23652,
+      "end": 23902,
+      "confidence": 0.99999,
+      "speaker": "A"
+    },
+    {
+      "text": "opportunities",
+      "start": 23956,
+      "end": 24442,
+      "confidence": 0.98808,
+      "speaker": "A"
+    },
+    {
+      "text": "that",
+      "start": 24506,
+      "end": 24638,
+      "confidence": 0.99985,
+      "speaker": "A"
+    },
+    {
+      "text": "we",
+      "start": 24644,
+      "end": 24766,
+      "confidence": 0.84796,
+      "speaker": "A"
+    },
+    {
+      "text": "have",
+      "start": 24788,
+      "end": 24998,
+      "confidence": 0.9963,
+      "speaker": "A"
+    },
+    {
+      "text": "today.",
+      "start": 25044,
+      "end": 25140,
+      "confidence": 0.99784,
+      "speaker": "A"
+    }
+  ],
+  "utterances": null,
+  "confidence": 0.9493999999999997,
+  "audio_duration": 25,
+  "punctuate": true,
+  "format_text": true,
+  "dual_channel": false,
+  "webhook_url": "https://assemblyai-web-production.uc.r.appspot.com/transcript/push",
+  "webhook_status_code": 204,
+  "webhook_auth": false,
+  "webhook_auth_header_name": null,
+  "speed_boost": false,
+  "auto_highlights_result": null,
+  "auto_highlights": false,
+  "audio_start_from": null,
+  "audio_end_at": null,
+  "word_boost": [],
+  "boost_param": null,
+  "filter_profanity": false,
+  "redact_pii": false,
+  "redact_pii_audio": false,
+  "redact_pii_audio_quality": null,
+  "redact_pii_policies": null,
+  "redact_pii_sub": null,
+  "speaker_labels": true,
+  "content_safety": false,
+  "iab_categories": false,
+  "content_safety_labels": {
+    "status": "unavailable",
+    "results": [],
+    "summary": {}
+  },
+  "iab_categories_result": {
+    "status": "unavailable",
+    "results": [],
+    "summary": {}
+  },
+  "language_detection": true,
+  "custom_spelling": null,
+  "throttled": null,
+  "auto_chapters": false,
+  "summarization": false,
+  "summary_type": null,
+  "summary_model": null,
+  "custom_topics": false,
+  "topics": [],
+  "speech_threshold": null,
+  "disfluencies": false,
+  "sentiment_analysis": false,
+  "chapters": null,
+  "sentiment_analysis_results": null,
+  "entity_detection": false,
+  "entities": null,
+  "summary": null,
+  "speakers_expected": null
+}

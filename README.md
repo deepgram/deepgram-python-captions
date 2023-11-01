@@ -1,10 +1,18 @@
-# Repo Name
+# Deepgram Python Captions
 
-A repository template for open-source demos, guides and sample apps. Description here.
+This package is the Python implementation of Deepgram's WebVTT and SRT formatting. Given a transcription, this package can return a valid string to store as WebVTT or SRT caption files.
 
-## Getting an API Key
+## Installation
 
-🔑 To access the Deepgram API you will need a [free Deepgram API Key](https://console.deepgram.com/signup?jump=keys).
+## WebVTT from Deepgram Transcriptions
+
+## SRT from Deepgram Transcriptions
+
+## Converters
+
+## Output WebVTT
+
+## Output SRT
 
 ## Documentation
 

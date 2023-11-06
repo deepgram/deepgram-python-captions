@@ -50,6 +50,5 @@ print(captions)
 # print("SRT Result:\n", srt_result)
 
 
-
 # result = seconds_to_timestamp(500, "%H:%M:%S,%f")
 # print(result)

@@ -1,30 +1,37 @@
 from .helpers import seconds_to_timestamp
 
+
 def webvtt(converter):
-  output = []
-  output.append("WEBVTT");
-  output.append("");
-
-  if hasattr(converter, "get_headers") and callable(getattr(converter, "get_headers")):
-    output.append("\n".join(converter.get_headers()))
-  
-  if hasattr(converter, "get_headers") and callable(getattr(converter, "get_headers")):
+    output = []
+    output.append("WEBVTT")
     output.append("")
 
-  lines = converter.get_lines()
+    if hasattr(converter, "get_headers") and callable(
+        getattr(converter, "get_headers")
+    ):
+        output.append("\n".join(converter.get_headers()))
 
-  speaker_labels = "speaker" in lines[0][0]
+    if hasattr(converter, "get_headers") and callable(
+        getattr(converter, "get_headers")
+    ):
+        output.append("")
 
-  for words in lines:
-    first_word = words[0]
-    last_word = words[-1]
+    lines = converter.get_lines()
 
-    output.append(f"{seconds_to_timestamp(first_word['start'])} --> {seconds_to_timestamp(last_word['end'])}")
+    speaker_labels = "speaker" in lines[0][0]
 
-    line = " ".join(word.get('punctuated_word', word['word']) for word in words)
-    speaker_label = f"<v Speaker {first_word['speaker']}>" if speaker_labels else ""
+    for words in lines:
+        first_word = words[0]
+        last_word = words[-1]
 
-    output.append(f"{speaker_label}{line}")
-    output.append("")
+        output.append(
+            f"{seconds_to_timestamp(first_word['start'])} --> {seconds_to_timestamp(last_word['end'])}"
+        )
 
-  return "\n".join(output)
+        line = " ".join(word.get("punctuated_word", word["word"]) for word in words)
+        speaker_label = f"<v Speaker {first_word['speaker']}>" if speaker_labels else ""
+
+        output.append(f"{speaker_label}{line}")
+        output.append("")
+
+    return "\n".join(output)

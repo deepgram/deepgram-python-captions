@@ -39,4 +39,3 @@ print(captions)
 # assembly = AssemblyAIConverter(assemblyai_utterances)
 # captions = webvtt(assembly)
 # print(captions)
-

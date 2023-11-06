@@ -8,7 +8,7 @@ It is designed to simplify the process of converting audio transcriptions into r
 """
 
 setup(
-    name="deepgram-python-captions",
+    name="deepgram-captions",
     version=VERSION,
     author="Deepgram",
     author_email="devrel@deepgram.com",

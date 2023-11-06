@@ -101,6 +101,7 @@ from deepgram_captions import DeepgramConverter, srt
 
 transcription = DeepgramConverter(dg_response)
 captions = srt(transcription)
+print(captions)
 ```
 
 This is the result:

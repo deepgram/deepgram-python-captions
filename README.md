@@ -11,7 +11,8 @@ pip install deepgram-captions
 ## WebVTT from Deepgram Transcriptions
 
 ```python
-from deepgram_captions import DeepgramConverter, webvtt
+from deepgram_captions.converters import DeepgramConverter
+from deepgram_captions.webvtt import webvtt
 
 transcription = DeepgramConverter(dg_response)
 captions = webvtt(transcription)
@@ -20,7 +21,8 @@ captions = webvtt(transcription)
 ## SRT from Deepgram Transcriptions
 
 ```py
-from deepgram_captions import DeepgramConverter, srt
+from deepgram_captions.converters import DeepgramConverter
+from deepgram_captions.srt import srt
 
 transcription = DeepgramConverter(dg_response)
 captions = srt(transcription)
@@ -31,7 +33,8 @@ captions = srt(transcription)
 ### Assembly AI
 
 ```py
-from deepgram_captions import AssemblyAIConverter, webvtt
+from deepgram_captions.converters import AssemblyAIConverter
+from deepgram_captions.webvtt import webvtt
 
 transcription = AssemblyAIConverter(assembly_response)
 captions = webvtt(transcription)
@@ -42,7 +45,8 @@ captions = webvtt(transcription)
 When transcribing https://dpgr.am/spacewalk.wav, and running it through our library, this is the WebVTT output.
 
 ```py
-from deepgram_captions import DeepgramConverter, webvtt
+from deepgram_captions.converters import DeepgramConverter
+from deepgram_captions.webvtt import webvtt
 
 transcription = DeepgramConverter(dg_response)
 captions = webvtt(transcription)
@@ -97,7 +101,8 @@ have today.
 When transcribing https://dpgr.am/spacewalk.wav, and running it through our library, this is the SRT output.
 
 ```py
-from deepgram_captions import DeepgramConverter, srt
+from deepgram_captions.converters import DeepgramConverter
+from deepgram_captions.srt import srt
 
 transcription = DeepgramConverter(dg_response)
 captions = srt(transcription)

@@ -39,9 +39,25 @@ class DeepgramConverter:
   
     return content
   
-  def get_headers():
+  def get_headers(self):
     output = []
-    # create headers for deepgram captions
+
+    output.append("NOTE")
+    output.append("Transcription provided by Deepgram")
+
+    if self.response.get('metadata'):
+        metadata = self.response['metadata']
+        if metadata.get('request_id'):
+            output.append(f"Request Id: {metadata['request_id']}")
+        if metadata.get('created'):
+            output.append(f"Created: {metadata['created']}")
+        if metadata.get('duration'):
+            output.append(f"Duration: {metadata['duration']}")
+        if metadata.get('channels'):
+            output.append(f"Channels: {metadata['channels']}")
+
+    return output
+
 
 
 class AssemblyAIConverter:

@@ -1,5 +1,5 @@
-from deepgram_captions.helpers import seconds_to_timestamp
 from deepgram_captions.srt import srt
+from deepgram_captions.webvtt import webvtt
 from deepgram_captions.converters import AssemblyAIConverter, DeepgramConverter
 import json
 
@@ -39,11 +39,11 @@ with open(json_file_assemblyai_utterances, "r") as json_file:
 
 
 # assembly = AssemblyAIConverter(assemblyai_utterances)
-# captions = srt(assembly)
+# captions = webvtt(assembly)
 # print(captions)
 
-deepgram = DeepgramConverter(dg_utterances)
-captions = srt(deepgram)
+deepgram = DeepgramConverter(dg_speakers)
+captions = webvtt(deepgram)
 print(captions)
 
 # srt_result = srt(dg_utterances)

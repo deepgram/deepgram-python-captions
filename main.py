@@ -38,13 +38,13 @@ with open(json_file_assemblyai_utterances, "r") as json_file:
     assemblyai_utterances = json.load(json_file)
 
 
-# assembly = AssemblyAIConverter(assemblyai_utterances)
-# captions = webvtt(assembly)
-# print(captions)
-
-deepgram = DeepgramConverter(dg_speakers)
-captions = webvtt(deepgram)
+assembly = AssemblyAIConverter(assemblyai_utterances)
+captions = webvtt(assembly)
 print(captions)
+
+# deepgram = DeepgramConverter(dg_transcription)
+# captions = srt(deepgram)
+# print(captions)
 
 # srt_result = srt(dg_utterances)
 # print("SRT Result:\n", srt_result)

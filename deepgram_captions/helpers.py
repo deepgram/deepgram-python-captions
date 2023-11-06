@@ -2,6 +2,7 @@ from datetime import datetime
 
 
 def seconds_to_timestamp(seconds, format="%H:%M:%S.%f"):
+    seconds = round(seconds, 3)
     dt = datetime.utcfromtimestamp(seconds)
     formatted_time = dt.strftime(format)
     formatted_time = formatted_time[:-3] + formatted_time[-3:].lstrip("0")

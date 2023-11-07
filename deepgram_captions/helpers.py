@@ -17,3 +17,11 @@ def chunk_array(arr, length):
         res.append(chunk_arr)
 
     return res
+
+
+def replace_text_with_word(content):
+    for content_list in content:
+        for dictionary in content_list:
+            if "text" in dictionary:
+                dictionary["word"] = dictionary.pop("text")
+    return content

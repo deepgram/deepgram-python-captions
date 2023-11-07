@@ -32,6 +32,18 @@ captions = srt(transcription)
 
 ## Other Converters
 
+### Whisper Timestamped
+
+```py
+from deepgram_captions.converters import WhisperTimestampedConverter
+from deepgram_captions.webvtt import webvtt
+
+transcription = WhisperTimestampedConverter(whisper_response)
+captions = webvtt(transcription)
+```
+
+[Whisper Timestamped](https://github.com/linto-ai/whisper-timestamped) adds word-level timestamps to OpenAI's Whisper speech-to-text transcriptions. Word-level timestamps are required for this package to create captions, which is why we have created the captions converter for Whisper Timestamped (and not OpenAI's Whisper).
+
 ### Assembly AI
 
 ```py

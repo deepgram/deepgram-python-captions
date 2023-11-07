@@ -1,4 +1,4 @@
-from .helpers import chunk_array
+from .helpers import chunk_array, replace_text_with_word
 
 
 class DeepgramConverter:
@@ -95,3 +95,20 @@ class AssemblyAIConverter:
             )
 
         return content
+
+class WhisperTimestampedConverter:
+    def __init__(self, whisper_response):    
+        self.response = whisper_response
+
+    def get_lines(self, line_length: int = 8):
+        results = self.response
+        content = []
+        if results.get("segments"):
+            for segment in results["segments"]:
+                if len(segment["words"]) > line_length:
+                    content.extend(chunk_array(segment["words"], line_length))
+                else:
+                    content.append(segment["words"])
+        
+        res = replace_text_with_word(content)
+        return res    

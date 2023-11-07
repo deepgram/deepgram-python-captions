@@ -1,0 +1,392 @@
+{
+  "text": " Yeah, as much as it's worth celebrating the first spacewalk with an all-female team, I think many of us are looking forward to it just being normal. And I think if it signifies anything, it is to honor the women who came before us, who were skilled and qualified and didn't get the same opportunities that we have today.",
+  "segments": [
+    {
+      "start": 0.12,
+      "end": 7.62,
+      "text": " Yeah, as much as it's worth celebrating the first spacewalk with an all-female team,",
+      "confidence": 0.89,
+      "words": [
+        {
+          "text": "Yeah,",
+          "start": 0.12,
+          "end": 0.38,
+          "confidence": 0.74
+        },
+        {
+          "text": "as",
+          "start": 0.98,
+          "end": 1.12,
+          "confidence": 0.95
+        },
+        {
+          "text": "much",
+          "start": 1.12,
+          "end": 1.36,
+          "confidence": 0.98
+        },
+        {
+          "text": "as",
+          "start": 1.36,
+          "end": 1.88,
+          "confidence": 0.97
+        },
+        {
+          "text": "it's",
+          "start": 1.88,
+          "end": 2.36,
+          "confidence": 0.98
+        },
+        {
+          "text": "worth",
+          "start": 2.36,
+          "end": 2.88,
+          "confidence": 1.0
+        },
+        {
+          "text": "celebrating",
+          "start": 2.88,
+          "end": 3.66,
+          "confidence": 0.99
+        },
+        {
+          "text": "the",
+          "start": 3.66,
+          "end": 4.78,
+          "confidence": 0.96
+        },
+        {
+          "text": "first",
+          "start": 4.78,
+          "end": 5.38,
+          "confidence": 0.99
+        },
+        {
+          "text": "spacewalk",
+          "start": 5.38,
+          "end": 6.0,
+          "confidence": 0.75
+        },
+        {
+          "text": "with",
+          "start": 6.0,
+          "end": 6.72,
+          "confidence": 0.61
+        },
+        {
+          "text": "an",
+          "start": 6.72,
+          "end": 6.88,
+          "confidence": 0.99
+        },
+        {
+          "text": "all-female",
+          "start": 6.88,
+          "end": 7.3,
+          "confidence": 0.85
+        },
+        {
+          "text": "team,",
+          "start": 7.3,
+          "end": 7.62,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "start": 8.54,
+      "end": 12.36,
+      "text": " I think many of us are looking forward to it just being normal.",
+      "confidence": 1.0,
+      "words": [
+        {
+          "text": "I",
+          "start": 8.54,
+          "end": 8.68,
+          "confidence": 1.0
+        },
+        {
+          "text": "think",
+          "start": 8.68,
+          "end": 8.9,
+          "confidence": 1.0
+        },
+        {
+          "text": "many",
+          "start": 8.9,
+          "end": 9.16,
+          "confidence": 0.99
+        },
+        {
+          "text": "of",
+          "start": 9.16,
+          "end": 9.38,
+          "confidence": 1.0
+        },
+        {
+          "text": "us",
+          "start": 9.38,
+          "end": 9.86,
+          "confidence": 1.0
+        },
+        {
+          "text": "are",
+          "start": 9.86,
+          "end": 10.3,
+          "confidence": 1.0
+        },
+        {
+          "text": "looking",
+          "start": 10.3,
+          "end": 10.6,
+          "confidence": 0.99
+        },
+        {
+          "text": "forward",
+          "start": 10.6,
+          "end": 10.82,
+          "confidence": 1.0
+        },
+        {
+          "text": "to",
+          "start": 10.82,
+          "end": 10.96,
+          "confidence": 0.99
+        },
+        {
+          "text": "it",
+          "start": 10.96,
+          "end": 11.18,
+          "confidence": 0.99
+        },
+        {
+          "text": "just",
+          "start": 11.18,
+          "end": 11.4,
+          "confidence": 0.99
+        },
+        {
+          "text": "being",
+          "start": 11.4,
+          "end": 11.86,
+          "confidence": 1.0
+        },
+        {
+          "text": "normal.",
+          "start": 11.86,
+          "end": 12.36,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "start": 12.98,
+      "end": 19.0,
+      "text": " And I think if it signifies anything, it is to honor the women who came before us,",
+      "confidence": 0.98,
+      "words": [
+        {
+          "text": "And",
+          "start": 12.98,
+          "end": 13.26,
+          "confidence": 0.98
+        },
+        {
+          "text": "I",
+          "start": 13.26,
+          "end": 14.12,
+          "confidence": 0.91
+        },
+        {
+          "text": "think",
+          "start": 14.12,
+          "end": 14.32,
+          "confidence": 1.0
+        },
+        {
+          "text": "if",
+          "start": 14.32,
+          "end": 14.5,
+          "confidence": 0.94
+        },
+        {
+          "text": "it",
+          "start": 14.5,
+          "end": 14.7,
+          "confidence": 0.99
+        },
+        {
+          "text": "signifies",
+          "start": 14.7,
+          "end": 15.08,
+          "confidence": 1.0
+        },
+        {
+          "text": "anything,",
+          "start": 15.08,
+          "end": 15.56,
+          "confidence": 1.0
+        },
+        {
+          "text": "it",
+          "start": 16.1,
+          "end": 16.12,
+          "confidence": 0.96
+        },
+        {
+          "text": "is",
+          "start": 16.12,
+          "end": 16.52,
+          "confidence": 1.0
+        },
+        {
+          "text": "to",
+          "start": 16.52,
+          "end": 17.16,
+          "confidence": 0.99
+        },
+        {
+          "text": "honor",
+          "start": 17.16,
+          "end": 17.42,
+          "confidence": 1.0
+        },
+        {
+          "text": "the",
+          "start": 17.42,
+          "end": 17.84,
+          "confidence": 1.0
+        },
+        {
+          "text": "women",
+          "start": 17.84,
+          "end": 18.06,
+          "confidence": 0.94
+        },
+        {
+          "text": "who",
+          "start": 18.06,
+          "end": 18.2,
+          "confidence": 0.98
+        },
+        {
+          "text": "came",
+          "start": 18.2,
+          "end": 18.46,
+          "confidence": 1.0
+        },
+        {
+          "text": "before",
+          "start": 18.46,
+          "end": 18.76,
+          "confidence": 1.0
+        },
+        {
+          "text": "us,",
+          "start": 18.76,
+          "end": 19.0,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "start": 19.82,
+      "end": 25.32,
+      "text": " who were skilled and qualified and didn't get the same opportunities that we have today.",
+      "confidence": 0.96,
+      "words": [
+        {
+          "text": "who",
+          "start": 19.82,
+          "end": 19.98,
+          "confidence": 1.0
+        },
+        {
+          "text": "were",
+          "start": 19.98,
+          "end": 20.52,
+          "confidence": 0.99
+        },
+        {
+          "text": "skilled",
+          "start": 20.52,
+          "end": 20.9,
+          "confidence": 1.0
+        },
+        {
+          "text": "and",
+          "start": 20.9,
+          "end": 21.22,
+          "confidence": 0.93
+        },
+        {
+          "text": "qualified",
+          "start": 21.22,
+          "end": 21.8,
+          "confidence": 1.0
+        },
+        {
+          "text": "and",
+          "start": 21.8,
+          "end": 22.64,
+          "confidence": 0.76
+        },
+        {
+          "text": "didn't",
+          "start": 22.64,
+          "end": 22.96,
+          "confidence": 0.99
+        },
+        {
+          "text": "get",
+          "start": 22.96,
+          "end": 23.38,
+          "confidence": 1.0
+        },
+        {
+          "text": "the",
+          "start": 23.38,
+          "end": 23.74,
+          "confidence": 0.99
+        },
+        {
+          "text": "same",
+          "start": 23.74,
+          "end": 23.94,
+          "confidence": 1.0
+        },
+        {
+          "text": "opportunities",
+          "start": 23.94,
+          "end": 24.54,
+          "confidence": 0.99
+        },
+        {
+          "text": "that",
+          "start": 24.54,
+          "end": 24.72,
+          "confidence": 0.97
+        },
+        {
+          "text": "we",
+          "start": 24.72,
+          "end": 24.88,
+          "confidence": 1.0
+        },
+        {
+          "text": "have",
+          "start": 24.88,
+          "end": 25.06,
+          "confidence": 1.0
+        },
+        {
+          "text": "today.",
+          "start": 25.06,
+          "end": 25.32,
+          "confidence": 0.87
+        }
+      ]
+    }
+  ],
+  "language": "en"
+}

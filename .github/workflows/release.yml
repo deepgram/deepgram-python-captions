@@ -38,12 +38,14 @@ jobs:
           git config --global user.email "devrel@deepgram.com"
           git config --global user.name "Deepgram"
 
+          # Create and switch to a new branch
+          git checkout -b update-version
+
           # Update the setup.py file with the new version
           sed -i "s/VERSION = .*/VERSION = \"$NEW_VERSION\"/" setup.py
-
-          # Commit the updated setup.py file
           git commit -m "Update VERSION to $NEW_VERSION" setup.py
-          git push
+          git push origin update-version
+
       - name: Build package
         run: python -m build
       - name: Install twine

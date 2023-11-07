@@ -1,5 +1,7 @@
 # Deepgram Python Captions
 
+ [![Discord](https://dcbadge.vercel.app/api/server/xWRaCDBtW4?style=flat)](https://discord.gg/xWRaCDBtW4) [![PyPI version](https://badge.fury.io/py/deepgram-captions.svg)](https://badge.fury.io/py/deepgram-captions)
+
 This package is the Python implementation of Deepgram's WebVTT and SRT formatting. Given a transcription, this package can return a valid string to store as WebVTT or SRT caption files.
 
 ## Installation

@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Upload Python Package
+name: Release
 
 on:
   release:
@@ -34,6 +34,10 @@ jobs:
           # Determine the new version from the release tag (e.g., "v1.2.3")
           NEW_VERSION=$(echo "${{ github.ref }}" | sed 's/^refs\/tags\///')
 
+          # Configure Git identity
+          git config --global user.email "devrel@deepgram.com"
+          git config --global user.name "Deepgram"
+
           # Update the setup.py file with the new version
           sed -i "s/VERSION = .*/VERSION = \"$NEW_VERSION\"/" setup.py
 
@@ -42,6 +46,8 @@ jobs:
           git push
       - name: Build package
         run: python -m build
+      - name: Install twine
+        run: python -m pip install --upgrade twine
       - name: Publish package
         uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
         with:

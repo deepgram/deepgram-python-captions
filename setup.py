@@ -1,14 +1,18 @@
 from setuptools import setup, find_packages
+import os.path
 
 with open("README.md", "r", encoding="utf-8") as fh:
     LONG_DESCRIPTION = fh.read()
 
-VERSION = "0.0.2"
+with open(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'deepgram_captions', '_version.py'), encoding="utf8") as file:
+    exec(file.read())
+# imports as __version__
+
 DESCRIPTION = "A Python package for generating captions."
 
 setup(
     name="deepgram-captions",
-    version=VERSION,
+    version=__version__,
     author="Deepgram",
     author_email="devrel@deepgram.com",
     url="https://github.com/deepgram/deepgram-python-captions",

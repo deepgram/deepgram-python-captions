@@ -96,8 +96,9 @@ class AssemblyAIConverter:
 
         return content
 
+
 class WhisperTimestampedConverter:
-    def __init__(self, whisper_response):    
+    def __init__(self, whisper_response):
         self.response = whisper_response
 
     def get_lines(self, line_length: int = 8):
@@ -109,6 +110,6 @@ class WhisperTimestampedConverter:
                     content.extend(chunk_array(segment["words"], line_length))
                 else:
                     content.append(segment["words"])
-        
+
         res = replace_text_with_word(content)
-        return res    
+        return res

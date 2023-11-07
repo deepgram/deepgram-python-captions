@@ -1,6 +1,10 @@
 from deepgram_captions.srt import srt
 from deepgram_captions.webvtt import webvtt
-from deepgram_captions.converters import AssemblyAIConverter, DeepgramConverter, WhisperTimestampedConverter
+from deepgram_captions.converters import (
+    AssemblyAIConverter,
+    DeepgramConverter,
+    WhisperTimestampedConverter,
+)
 import json
 
 json_file_dg_transcription = "test/dg_transcription.json"
@@ -47,4 +51,3 @@ print(captions)
 # whisperTS = WhisperTimestampedConverter(whisper_timestamped)
 # captions = srt(whisperTS)
 # print(captions)
-

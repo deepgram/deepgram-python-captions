@@ -18,6 +18,7 @@ def chunk_array(arr, length):
 
     return res
 
+
 def replace_text_with_word(content):
     for content_list in content:
         for dictionary in content_list:

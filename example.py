@@ -1,10 +1,10 @@
-from deepgram_captions import srt, webvtt, DeepgramConverter, AssemblyAIConverter, WhisperTimestampedConverter
-# from deepgram_captions import webvtt
-# from deepgram_captions.converters import (
-#     AssemblyAIConverter,
-#     DeepgramConverter,
-#     WhisperTimestampedConverter,
-# )
+from deepgram_captions import (
+    srt,
+    webvtt,
+    DeepgramConverter,
+    AssemblyAIConverter,
+    WhisperTimestampedConverter,
+)
 import json
 
 json_file_dg_transcription = "test/dg_transcription.json"

@@ -1,6 +1,6 @@
 # Deepgram Python Captions
 
- [![Discord](https://dcbadge.vercel.app/api/server/xWRaCDBtW4?style=flat)](https://discord.gg/xWRaCDBtW4) [![PyPI version](https://badge.fury.io/py/deepgram-captions.svg)](https://badge.fury.io/py/deepgram-captions)
+[![Discord](https://dcbadge.vercel.app/api/server/xWRaCDBtW4?style=flat)](https://discord.gg/xWRaCDBtW4) [![PyPI version](https://badge.fury.io/py/deepgram-captions.svg)](https://badge.fury.io/py/deepgram-captions)
 
 This package is the Python implementation of Deepgram's WebVTT and SRT formatting. Given a transcription, this package can return a valid string to store as WebVTT or SRT caption files.
 
@@ -13,8 +13,7 @@ pip install deepgram-captions
 ## WebVTT from Deepgram Transcriptions
 
 ```python
-from deepgram_captions.converters import DeepgramConverter
-from deepgram_captions.webvtt import webvtt
+from deepgram_captions import DeepgramConverter, webvtt
 
 transcription = DeepgramConverter(dg_response)
 captions = webvtt(transcription)
@@ -23,8 +22,7 @@ captions = webvtt(transcription)
 ## SRT from Deepgram Transcriptions
 
 ```py
-from deepgram_captions.converters import DeepgramConverter
-from deepgram_captions.srt import srt
+from deepgram_captions import DeepgramConverter, srt
 
 transcription = DeepgramConverter(dg_response)
 captions = srt(transcription)
@@ -35,8 +33,7 @@ captions = srt(transcription)
 ### Whisper Timestamped
 
 ```py
-from deepgram_captions.converters import WhisperTimestampedConverter
-from deepgram_captions.webvtt import webvtt
+from deepgram_captions import WhisperTimestampedConverter, webvtt
 
 transcription = WhisperTimestampedConverter(whisper_response)
 captions = webvtt(transcription)
@@ -47,8 +44,7 @@ captions = webvtt(transcription)
 ### Assembly AI
 
 ```py
-from deepgram_captions.converters import AssemblyAIConverter
-from deepgram_captions.webvtt import webvtt
+from deepgram_captions import AssemblyAIConverter, webvtt
 
 transcription = AssemblyAIConverter(assembly_response)
 captions = webvtt(transcription)
@@ -115,8 +111,7 @@ have today.
 When transcribing https://dpgr.am/spacewalk.wav, and running it through our library, this is the SRT output.
 
 ```py
-from deepgram_captions.converters import DeepgramConverter
-from deepgram_captions.srt import srt
+from deepgram_captions import DeepgramConverter, srt
 
 transcription = DeepgramConverter(dg_response)
 captions = srt(transcription)

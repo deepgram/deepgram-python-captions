@@ -1,8 +1,8 @@
-from deepgram_captions.srt import srt
-from deepgram_captions.webvtt import webvtt
-from deepgram_captions.converters import (
-    AssemblyAIConverter,
+from deepgram_captions import (
+    srt,
+    webvtt,
     DeepgramConverter,
+    AssemblyAIConverter,
     WhisperTimestampedConverter,
 )
 import json

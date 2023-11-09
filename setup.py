@@ -4,7 +4,12 @@ import os.path
 with open("README.md", "r", encoding="utf-8") as fh:
     LONG_DESCRIPTION = fh.read()
 
-with open(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'deepgram_captions', '_version.py'), encoding="utf8") as file:
+with open(
+    os.path.join(
+        os.path.abspath(os.path.dirname(__file__)), "deepgram_captions", "_version.py"
+    ),
+    encoding="utf8",
+) as file:
     exec(file.read())
 # imports as __version__
 

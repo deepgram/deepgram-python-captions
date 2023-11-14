@@ -1,0 +1,386 @@
+{
+  "metadata": {
+    "transaction_key": "deprecated",
+    "request_id": "9e213b5c-cf78-4c95-bb5d-bb1ca65f26a1",
+    "sha256": "154e291ecfa8be6ab8343560bcc109008fa7853eb5372533e8efdefc9b504c33",
+    "created": "2023-11-14T15:00:10.698Z",
+    "duration": 25.933313,
+    "channels": 1,
+    "models": ["c6481769-89cd-447f-be27-1e6e9dac3616"],
+    "model_info": {
+      "c6481769-89cd-447f-be27-1e6e9dac3616": {
+        "name": "medium-whisper",
+        "version": "2022-09-21.5",
+        "arch": "whisper"
+      }
+    }
+  },
+  "results": {
+    "channels": [
+      {
+        "alternatives": [
+          {
+            "transcript": "yeah as much as it's worth celebrating the first spacewalk with an all-female team i think many of us are looking forward to it just being normal and i think if it signifies anything it is to honor the women who came before us who were skilled and qualified and didn't get the same opportunities that we have today",
+            "confidence": 0.9866368,
+            "words": [
+              {
+                "word": "yeah",
+                "start": 0.06,
+                "end": 0.56,
+                "confidence": 0.9563703
+              },
+              {
+                "word": "as",
+                "start": 0.9,
+                "end": 1.12,
+                "confidence": 0.9768862
+              },
+              {
+                "word": "much",
+                "start": 1.12,
+                "end": 1.36,
+                "confidence": 0.97141933
+              },
+              {
+                "word": "as",
+                "start": 1.36,
+                "end": 1.86,
+                "confidence": 0.97323734
+              },
+              {
+                "word": "it's",
+                "start": 2.08,
+                "end": 2.34,
+                "confidence": 0.9978277
+              },
+              {
+                "word": "worth",
+                "start": 2.34,
+                "end": 2.84,
+                "confidence": 0.9052546
+              },
+              {
+                "word": "celebrating",
+                "start": 2.9199998,
+                "end": 3.4199998,
+                "confidence": 0.9887623
+              },
+              {
+                "word": "the",
+                "start": 4.46,
+                "end": 4.64,
+                "confidence": 0.8508073
+              },
+              {
+                "word": "first",
+                "start": 4.64,
+                "end": 5.14,
+                "confidence": 0.66090274
+              },
+              {
+                "word": "spacewalk",
+                "start": 5.3399997,
+                "end": 5.8399997,
+                "confidence": 0.5009989
+              },
+              {
+                "word": "with",
+                "start": 6.42,
+                "end": 6.62,
+                "confidence": 0.9866368
+              },
+              {
+                "word": "an",
+                "start": 6.62,
+                "end": 6.7799997,
+                "confidence": 0.59729016
+              },
+              {
+                "word": "all-female",
+                "start": 6.7799997,
+                "end": 7.2799997,
+                "confidence": 0.99692756
+              },
+              {
+                "word": "team",
+                "start": 7.3599997,
+                "end": 7.8599997,
+                "confidence": 0.05924989
+              },
+              {
+                "word": "i",
+                "start": 8.5,
+                "end": 8.639999,
+                "confidence": 0.99139494
+              },
+              {
+                "word": "think",
+                "start": 8.639999,
+                "end": 8.92,
+                "confidence": 0.9987821
+              },
+              {
+                "word": "many",
+                "start": 8.92,
+                "end": 9.139999,
+                "confidence": 0.9982223
+              },
+              {
+                "word": "of",
+                "start": 9.139999,
+                "end": 9.3,
+                "confidence": 0.9979126
+              },
+              {
+                "word": "us",
+                "start": 9.3,
+                "end": 9.8,
+                "confidence": 0.98904747
+              },
+              {
+                "word": "are",
+                "start": 9.96,
+                "end": 10.2,
+                "confidence": 0.9962388
+              },
+              {
+                "word": "looking",
+                "start": 10.2,
+                "end": 10.5199995,
+                "confidence": 0.99491775
+              },
+              {
+                "word": "forward",
+                "start": 10.5199995,
+                "end": 10.8,
+                "confidence": 0.99450845
+              },
+              {
+                "word": "to",
+                "start": 10.8,
+                "end": 10.94,
+                "confidence": 0.9888053
+              },
+              {
+                "word": "it",
+                "start": 10.94,
+                "end": 11.16,
+                "confidence": 0.99732226
+              },
+              {
+                "word": "just",
+                "start": 11.16,
+                "end": 11.42,
+                "confidence": 0.9988391
+              },
+              {
+                "word": "being",
+                "start": 11.42,
+                "end": 11.92,
+                "confidence": 0.779804
+              },
+              {
+                "word": "normal",
+                "start": 12.04,
+                "end": 12.54,
+                "confidence": 0.078283265
+              },
+              {
+                "word": "and",
+                "start": 13.78,
+                "end": 13.9,
+                "confidence": 0.9996959
+              },
+              {
+                "word": "i",
+                "start": 13.9,
+                "end": 14.0,
+                "confidence": 0.9448686
+              },
+              {
+                "word": "think",
+                "start": 14.0,
+                "end": 14.24,
+                "confidence": 0.9922965
+              },
+              {
+                "word": "if",
+                "start": 14.24,
+                "end": 14.4,
+                "confidence": 0.99608225
+              },
+              {
+                "word": "it",
+                "start": 14.4,
+                "end": 14.559999,
+                "confidence": 0.9979526
+              },
+              {
+                "word": "signifies",
+                "start": 14.559999,
+                "end": 15.059999,
+                "confidence": 0.9989042
+              },
+              {
+                "word": "anything",
+                "start": 15.16,
+                "end": 15.66,
+                "confidence": 0.9827157
+              },
+              {
+                "word": "it",
+                "start": 15.82,
+                "end": 16.02,
+                "confidence": 0.9629161
+              },
+              {
+                "word": "is",
+                "start": 16.02,
+                "end": 16.52,
+                "confidence": 0.9853512
+              },
+              {
+                "word": "to",
+                "start": 16.9,
+                "end": 17.1,
+                "confidence": 0.99523395
+              },
+              {
+                "word": "honor",
+                "start": 17.1,
+                "end": 17.6,
+                "confidence": 0.6679874
+              },
+              {
+                "word": "the",
+                "start": 17.619999,
+                "end": 17.78,
+                "confidence": 0.9881501
+              },
+              {
+                "word": "women",
+                "start": 17.78,
+                "end": 18.02,
+                "confidence": 0.9790949
+              },
+              {
+                "word": "who",
+                "start": 18.02,
+                "end": 18.18,
+                "confidence": 0.97190136
+              },
+              {
+                "word": "came",
+                "start": 18.18,
+                "end": 18.42,
+                "confidence": 0.98705274
+              },
+              {
+                "word": "before",
+                "start": 18.42,
+                "end": 18.8,
+                "confidence": 0.55442697
+              },
+              {
+                "word": "us",
+                "start": 18.8,
+                "end": 19.3,
+                "confidence": 0.9728483
+              },
+              {
+                "word": "who",
+                "start": 19.46,
+                "end": 19.96,
+                "confidence": 0.97716033
+              },
+              {
+                "word": "were",
+                "start": 20.22,
+                "end": 20.46,
+                "confidence": 0.94137776
+              },
+              {
+                "word": "skilled",
+                "start": 20.46,
+                "end": 20.9,
+                "confidence": 0.16880928
+              },
+              {
+                "word": "and",
+                "start": 20.9,
+                "end": 21.14,
+                "confidence": 0.9861166
+              },
+              {
+                "word": "qualified",
+                "start": 21.14,
+                "end": 21.64,
+                "confidence": 0.98559004
+              },
+              {
+                "word": "and",
+                "start": 22.38,
+                "end": 22.58,
+                "confidence": 0.9992938
+              },
+              {
+                "word": "didn't",
+                "start": 22.58,
+                "end": 22.88,
+                "confidence": 0.9978927
+              },
+              {
+                "word": "get",
+                "start": 22.88,
+                "end": 23.38,
+                "confidence": 0.99836797
+              },
+              {
+                "word": "the",
+                "start": 23.4,
+                "end": 23.66,
+                "confidence": 0.99690944
+              },
+              {
+                "word": "same",
+                "start": 23.66,
+                "end": 23.9,
+                "confidence": 0.9925182
+              },
+              {
+                "word": "opportunities",
+                "start": 23.9,
+                "end": 24.4,
+                "confidence": 0.9980082
+              },
+              {
+                "word": "that",
+                "start": 24.52,
+                "end": 24.68,
+                "confidence": 0.99836177
+              },
+              {
+                "word": "we",
+                "start": 24.68,
+                "end": 24.86,
+                "confidence": 0.9639874
+              },
+              {
+                "word": "have",
+                "start": 24.86,
+                "end": 25.06,
+                "confidence": 0.911611
+              },
+              {
+                "word": "today",
+                "start": 25.06,
+                "end": 25.56,
+                "confidence": 0.049012642
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

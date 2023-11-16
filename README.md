@@ -4,11 +4,19 @@
 
 This package is the Python implementation of Deepgram's WebVTT and SRT formatting. Given a transcription, this package can return a valid string to store as WebVTT or SRT caption files.
 
+The package is not dependent on Deepgram, but it is expected that you will provide a JSON response from a transcription request from either Deepgram or one of the other supported speech-to-text APIs.
+
 ## Installation
 
 ```bash
 pip install deepgram-captions
 ```
+
+## How it works
+
+The converter takes in a JSON object response (see examples in the `./test` folder.) Depending on which API you use, the converter will turn that into a shape that can be handled by the `webvtt` and `srt` scripts.
+
+You provide the JSON object; then select the converter needed such as `DeepgramConverter`, `WhisperTimestampedConverter`, `AssemblyAIConverter` and so on. (If the API you want to use is not supported, please reach out to `devrel@deepgram.com` and we will do our best to add it.)
 
 ## WebVTT from Deepgram Transcriptions
 
@@ -30,7 +38,24 @@ captions = srt(transcription)
 
 ## Other Converters
 
-### Whisper Timestamped
+### Whisper
+
+Open AI's Whisper (through their API) does not provide timestamps, so a JSON response directly from OpenAI cannot be used with this package. However, there are a couple other options you can try:
+
+#### Deepgram's Whisper Cloud
+
+Use Deepgram's fully hosted Whisper Cloud, which gives you Whisper transcriptions along with the features that come with Deepgram's API such as timestamps. Use `model=whisper` when you make your request to Deepgram. Then use the `DeepgramConverter` to create the captions.
+
+```py
+from deepgram_captions import DeepgramConverter, srt
+
+transcription = DeepgramConverter(whisper_response)
+captions = srt(transcription)
+```
+
+#### Whisper Timestamped
+
+[Whisper Timestamped](https://github.com/linto-ai/whisper-timestamped) adds word-level timestamps to OpenAI's Whisper speech-to-text transcriptions. Word-level timestamps are required for this package to create captions, which is why we have created the captions converter for Whisper Timestamped (and not OpenAI's Whisper).
 
 ```py
 from deepgram_captions import WhisperTimestampedConverter, webvtt
@@ -39,9 +64,9 @@ transcription = WhisperTimestampedConverter(whisper_response)
 captions = webvtt(transcription)
 ```
 
-[Whisper Timestamped](https://github.com/linto-ai/whisper-timestamped) adds word-level timestamps to OpenAI's Whisper speech-to-text transcriptions. Word-level timestamps are required for this package to create captions, which is why we have created the captions converter for Whisper Timestamped (and not OpenAI's Whisper).
-
 ### Assembly AI
+
+AssemblyAI is another popular speech-to-text API.
 
 ```py
 from deepgram_captions import AssemblyAIConverter, webvtt
@@ -50,7 +75,9 @@ transcription = AssemblyAIConverter(assembly_response)
 captions = webvtt(transcription)
 ```
 
-## Output WebVTT
+## Output
+
+### Output WebVTT
 
 When transcribing https://dpgr.am/spacewalk.wav, and running it through our library, this is the WebVTT output.
 

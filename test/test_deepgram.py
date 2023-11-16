@@ -193,5 +193,31 @@ def test_first_caption_number(input_data):
         ), f"First caption number is not 1: {first_caption_number}"
 
 
+@pytest.mark.parametrize(
+    "input_data",
+    [
+        DeepgramConverter(dg_speakers),
+        DeepgramConverter(dg_speakers_no_utterances),
+    ],
+)
+def test_srt_speaker_format(input_data):
+    """
+    Test if the SRT output contains speaker information in the correct format.
+    """
+    result = srt(input_data)
+    srt_captions = result.split("\n\n")
+    speaker_pattern = r"\[speaker \d+\]"
+
+    for caption in srt_captions:
+        if caption.strip():
+            lines = caption.split("\n")
+
+            # Check if speaker information is present
+            if len(lines) > 2 and re.match(speaker_pattern, lines[2]):
+                assert (
+                    re.match(speaker_pattern, lines[2]) is not None
+                ), f"Speaker format is incorrect: {lines[2]}"
+
+
 if __name__ == "__main__":
     pytest.main()

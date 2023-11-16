@@ -40,8 +40,8 @@ with open(json_file_whisper_timestamped, "r") as json_file:
 
 # Uncomment a section to test the converter:
 
-deepgram = DeepgramConverter(dg_transcription)
-captions = webvtt(deepgram)
+deepgram = DeepgramConverter(dg_speakers_no_utterances)
+captions = srt(deepgram)
 print(captions)
 
 # assembly = AssemblyAIConverter(assemblyai_utterances)

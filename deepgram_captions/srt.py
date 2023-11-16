@@ -6,6 +6,8 @@ def srt(converter):
     lines = converter.get_lines()
     entry = 1
 
+    current_speaker = None
+
     for words in lines:
         output.append(str(entry))
         entry += 1
@@ -17,6 +19,12 @@ def srt(converter):
         end_time = seconds_to_timestamp(last_word["end"], "%H:%M:%S,%f")
 
         output.append(f"{start_time} --> {end_time}")
+
+        if "speaker" in first_word:
+            if current_speaker is None or current_speaker != first_word["speaker"]:
+                current_speaker = first_word["speaker"]
+                output.append(f"[speaker {current_speaker}]")
+
         punctuated_words = [word.get("punctuated_word", word["word"]) for word in words]
         output.append(" ".join(punctuated_words))
         output.append("")

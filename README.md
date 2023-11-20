@@ -36,6 +36,17 @@ transcription = DeepgramConverter(dg_response)
 captions = srt(transcription)
 ```
 
+### Line length
+
+Add an optional integer parameter to set the line length of the caption.
+
+```py
+line_length = 10
+
+deepgram = DeepgramConverter(dg_speakers)
+captions = webvtt(deepgram, line_length)
+```
+
 ## Other Converters
 
 ### Whisper

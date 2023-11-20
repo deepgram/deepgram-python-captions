@@ -1,9 +1,13 @@
 from .helpers import seconds_to_timestamp
 
 
-def srt(converter):
+def srt(converter, line_length=None):
     output = []
-    lines = converter.get_lines()
+
+    if line_length == None:
+        line_length = 8
+
+    lines = converter.get_lines(line_length)
     entry = 1
 
     current_speaker = None

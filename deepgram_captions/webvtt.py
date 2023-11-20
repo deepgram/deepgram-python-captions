@@ -1,10 +1,13 @@
 from .helpers import seconds_to_timestamp
 
 
-def webvtt(converter):
+def webvtt(converter, line_length=None):
     output = []
     output.append("WEBVTT")
     output.append("")
+
+    if line_length == None:
+        line_length = 8
 
     if hasattr(converter, "get_headers") and callable(
         getattr(converter, "get_headers")
@@ -17,7 +20,7 @@ def webvtt(converter):
         output.append("")
 
     if hasattr(converter, "get_lines") and callable(getattr(converter, "get_lines")):
-        lines = converter.get_lines()
+        lines = converter.get_lines(line_length)
 
         speaker_labels = "speaker" in lines[0][0]
 

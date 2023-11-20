@@ -5,7 +5,7 @@ class DeepgramConverter:
     def __init__(self, dg_response):
         self.response = dg_response
 
-    def get_lines(self, line_length: int = 8):
+    def get_lines(self, line_length):
         results = self.response["results"]
         content = []
 

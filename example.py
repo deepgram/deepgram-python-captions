@@ -44,8 +44,10 @@ with open(json_file_dg_whisper_transcription, "r") as json_file:
 
 # Uncomment a section to test the converter:
 
-deepgram = DeepgramConverter(dg_speakers_no_utterances)
-captions = srt(deepgram)
+line_length = 10
+
+deepgram = DeepgramConverter(dg_speakers)
+captions = webvtt(deepgram, line_length)
 print(captions)
 
 # assembly = AssemblyAIConverter(assemblyai_utterances)

@@ -1,9 +1,13 @@
+import json
 from .helpers import chunk_array, replace_text_with_word
 
 
 class DeepgramConverter:
     def __init__(self, dg_response):
-        self.response = dg_response
+        if not isinstance(dg_response, dict):
+            self.response = json.loads(dg_response.to_json())
+        else:
+            self.response = dg_response
 
     def get_lines(self, line_length):
         results = self.response["results"]

@@ -2,12 +2,31 @@ import json
 from .helpers import chunk_array, replace_text_with_word
 
 
+class ConverterException(Exception):
+    pass
+
+
 class DeepgramConverter:
-    def __init__(self, dg_response):
+    def __init__(self, dg_response, use_exception: bool = True):
         if not isinstance(dg_response, dict):
             self.response = json.loads(dg_response.to_json())
         else:
             self.response = dg_response
+
+        if use_exception:
+            one_valid_transcription = False
+            for channel in self.response["results"]["channels"]:
+                if channel["alternatives"][0]["transcript"] != "":
+                    one_valid_transcription = True
+                    break
+            if "utterances" in self.response["results"]:
+                for utterance in self.response["results"]["utterances"]:
+                    if utterance["transcript"] != "":
+                        one_valid_transcription = True
+                        break
+
+            if not one_valid_transcription:
+                raise ConverterException("No valid transcriptions found in response")
 
     def get_lines(self, line_length):
         results = self.response["results"]
@@ -19,7 +38,6 @@ class DeepgramConverter:
                     content.extend(chunk_array(utterance["words"], line_length))
                 else:
                     content.append(utterance["words"])
-
         else:
             words = results["channels"][0]["alternatives"][0]["words"]
             diarize = (

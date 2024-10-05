@@ -1,4 +1,4 @@
-from .helpers import seconds_to_timestamp
+from .helpers import seconds_to_timestamp, EmptyTranscriptException
 
 
 def webvtt(converter, line_length=None):
@@ -21,6 +21,9 @@ def webvtt(converter, line_length=None):
 
     if hasattr(converter, "get_lines") and callable(getattr(converter, "get_lines")):
         lines = converter.get_lines(line_length)
+
+        if not lines[0]:
+            raise EmptyTranscriptException("No transcript data found")
 
         speaker_labels = "speaker" in lines[0][0]
 

@@ -1,4 +1,4 @@
-from .helpers import seconds_to_timestamp
+from .helpers import seconds_to_timestamp, EmptyTranscriptException
 
 
 def srt(converter, line_length=None):
@@ -11,6 +11,9 @@ def srt(converter, line_length=None):
     entry = 1
 
     current_speaker = None
+
+    if not lines[0]:
+        raise EmptyTranscriptException("No transcript data found")
 
     for words in lines:
         output.append(str(entry))

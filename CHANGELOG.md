@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0](https://github.com/deepgram/deepgram-python-captions/compare/v1.2.0...v2.0.0) (2026-03-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* webvtt() and srt() now raise EmptyTranscriptException when the converter returns no lines; previously returned an empty string.
+
+### Features
+
+* modernise project to current Deepgram Python standards ([#20](https://github.com/deepgram/deepgram-python-captions/issues/20)) ([0c6e563](https://github.com/deepgram/deepgram-python-captions/commit/0c6e5637cc65cc3f3fc72ffcf511aa8c237dfd0a))
+
 ## [1.2.0] - 2024-03-15
 
 ### Added

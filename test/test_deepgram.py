@@ -1,9 +1,11 @@
-import pytest
+import json
 import re
+
+import pytest
+
+from deepgram_captions.converters import DeepgramConverter
 from deepgram_captions.srt import srt
 from deepgram_captions.webvtt import webvtt
-from deepgram_captions.converters import DeepgramConverter
-import json
 
 json_file_dg_transcription = "test/dg_transcription.json"
 json_file_dg_utterances = "test/dg_utterances.json"
@@ -45,9 +47,7 @@ def test_webvtt_start_with_webvtt(input_data):
 
     if lines:
         first_line = lines[0].strip()
-        assert (
-            first_line == "WEBVTT"
-        ), f"WebVTT captions do not start with 'WEBVTT': {first_line}"
+        assert first_line == "WEBVTT", f"WebVTT captions do not start with 'WEBVTT': {first_line}"
 
 
 @pytest.mark.parametrize(
@@ -66,9 +66,9 @@ def test_webvtt_header(input_data):
     result = webvtt(input_data)
     assert isinstance(result, str), "Result should be a string"
     assert "NOTE" in result, "Result should contain 'NOTE' in header"
-    assert (
-        "Transcription provided by Deepgram" in result
-    ), "Result should name Deepgram as transcription source in header"
+    assert "Transcription provided by Deepgram" in result, (
+        "Result should name Deepgram as transcription source in header"
+    )
     assert "Request Id" in result, "Result should contain Request Id in header"
     assert "Created" in result, "Result should contain Created timestamp in header"
     assert "Duration" in result, "Result should contain Duration information in header"
@@ -93,9 +93,9 @@ def test_webvtt_timestamp_format(input_data):
     webvtt_captions = webvtt(result)
     timestamp_lines = re.findall(timestamp_pattern, webvtt_captions)
     for timestamp_line in timestamp_lines:
-        assert (
-            re.match(timestamp_pattern, timestamp_line) is not None
-        ), f"Timestamp format is incorrect: {timestamp_line}"
+        assert re.match(timestamp_pattern, timestamp_line) is not None, (
+            f"Timestamp format is incorrect: {timestamp_line}"
+        )
 
 
 @pytest.mark.parametrize(
@@ -110,9 +110,7 @@ def test_webvtt_speaker_format(input_data):
     caption_pattern = r"\d{2}:\d{2}:\d{2}\.\d{3} --> \d{2}:\d{2}:\d{2}\.\d{3}\n<v [^\s]+>[^\n]+\n<v [^\s]+>[^\n]+"
     captions = re.findall(caption_pattern, result)
     for caption in captions:
-        assert (
-            re.match(r"<v [^\s]+>", caption.split("\n")[1]) is not None
-        ), f"Speaker format is incorrect: {caption}"
+        assert re.match(r"<v [^\s]+>", caption.split("\n")[1]) is not None, f"Speaker format is incorrect: {caption}"
 
 
 @pytest.mark.parametrize(
@@ -137,9 +135,7 @@ def test_srt_format(input_data):
             assert lines[0] == str(index), f"Caption number is incorrect: {lines[0]}"
 
             timestamp_pattern = r"\d{2}:\d{2}:\d{2},\d{3} --> \d{2}:\d{2}:\d{2},\d{3}"
-            assert (
-                re.match(timestamp_pattern, lines[1]) is not None
-            ), f"Timestamp format is incorrect: {lines[1]}"
+            assert re.match(timestamp_pattern, lines[1]) is not None, f"Timestamp format is incorrect: {lines[1]}"
 
             assert len(lines) > 2, "Speech content is missing"
 
@@ -163,9 +159,7 @@ def test_srt_timestamp_format(input_data):
     for caption in srt_captions:
         if caption.strip():
             lines = caption.split("\n")
-            assert (
-                re.match(timestamp_pattern, lines[1]) is not None
-            ), f"Timestamp format is incorrect: {lines[1]}"
+            assert re.match(timestamp_pattern, lines[1]) is not None, f"Timestamp format is incorrect: {lines[1]}"
 
 
 @pytest.mark.parametrize(
@@ -188,9 +182,7 @@ def test_first_caption_number(input_data):
         first_caption_lines = srt_captions[0].split("\n")
         first_caption_number = int(first_caption_lines[0])
 
-        assert (
-            first_caption_number == 1
-        ), f"First caption number is not 1: {first_caption_number}"
+        assert first_caption_number == 1, f"First caption number is not 1: {first_caption_number}"
 
 
 @pytest.mark.parametrize(
@@ -214,9 +206,7 @@ def test_srt_speaker_format(input_data):
 
             # Check if speaker information is present
             if len(lines) > 2 and re.match(speaker_pattern, lines[2]):
-                assert (
-                    re.match(speaker_pattern, lines[2]) is not None
-                ), f"Speaker format is incorrect: {lines[2]}"
+                assert re.match(speaker_pattern, lines[2]) is not None, f"Speaker format is incorrect: {lines[2]}"
 
 
 if __name__ == "__main__":

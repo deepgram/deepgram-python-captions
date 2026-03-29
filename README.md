@@ -1,6 +1,5 @@
 # deepgram-captions
 
-[![Discord](https://dcbadge.vercel.app/api/server/xWRaCDBtW4?style=flat)](https://discord.gg/xWRaCDBtW4)
 [![PyPI version](https://badge.fury.io/py/deepgram-captions.svg)](https://badge.fury.io/py/deepgram-captions)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
